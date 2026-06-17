@@ -23,7 +23,7 @@ from flask import Flask, render_template, request, Response, jsonify
 
 app = Flask(__name__, template_folder=".", static_folder=None)
 
-OPENROUTER_API_KEY = os.environ.get("OPENROUTER_API_KEY", "")
+OPENROUTER_API_KEY = os.environ.get("OPENROUTER_API_KEY", "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")
 OPENROUTER_URL = "https://openrouter.ai/api/v1/chat/completions"
 
 # Curated free OpenRouter models (June 2026), grouped for the dropdown.
